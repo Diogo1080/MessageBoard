@@ -1,6 +1,6 @@
 const sendMsg = document.getElementById("sendMsg");
 
-document.getElementById("getMsg").addEventListener("click", getMessages);
+
 
 function getMessages() {
   fetch("/api/message")
@@ -17,3 +17,22 @@ function getMessages() {
       });
     });
 }
+
+const postMessage = (evt) => {
+  evt.preventDefault();
+  const msg = document.getElementById("msgInput").value;
+  console.log(msg);
+  const data = {
+    message: msg
+  };
+  fetch("/api/message", {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+  }).catch((err) => console.log(err));
+};
+
+document.getElementById("getMsg").addEventListener("click", getMessages);
+document.getElementById("sendMsg").addEventListener("click", postMessage);
