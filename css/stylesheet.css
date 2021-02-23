@@ -1,0 +1,158 @@
+html,
+body,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+header {
+  background-color: cyan;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  background-color: grey;
+}
+
+.footer-h2 {
+  background-color: cyan;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.background-blue {
+  background-color: blue;
+}
+
+.background-green {
+  background-color: green;
+}
+
+#second-i {
+  font-size: 30px;
+}
+
+footer h2 {
+  background-color: grey;
+}
+
+.align-center > :nth-child(1),
+.align-center > :nth-child(3),
+.align-center > :nth-child(7),
+.align-center > :nth-child(8) {
+  font-size: 30px;
+}
+
+.align-center div :last-child {
+  font-size: 30px;
+  line-height: 60px;
+  border: 1px solid black;
+}
+
+.align-center div :last-child:hover {
+  background-color: red;
+}
+
+a {
+  text-transform: uppercase;
+}
+
+a:visited {
+  color: green;
+}
+
+#display-example {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#display-example div {
+  background-color: antiquewhite;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  font-size: 200px;
+  text-align: center;
+  color: pink;
+  margin: 10px 10px;
+}
+
+#display-example :first-child {
+  background-color: lightblue;
+  order: 4;
+}
+
+#display-example :nth-child(3) {
+  background-color: red;
+  order: 5;
+}
+
+#display-example :nth-child(2) {
+  background-color: green;
+  order: 3;
+}
+
+#display-example :nth-child(4) {
+  background-color: navy;
+  order: 2;
+}
+
+#display-example :last-child {
+  background-color: blue;
+  order: 2;
+}
+
+#position-example {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+#position-example div {
+  font-size: 150px;
+  border: 20px groove pink;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+}
+
+#position-example p {
+  margin: auto;
+}
+
+#position-example > :first-child {
+  background-color: red;
+  position: relative;
+  top: 50px;
+  left: 137px;
+  z-index: 1;
+}
+
+#position-example > :nth-child(2) {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+}
+
+#position-example > :last-child {
+  background-color: orange;
+}
