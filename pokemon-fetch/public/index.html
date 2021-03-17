@@ -7,93 +7,96 @@
 
 <body>
   <main>
-    <section>
-      
-      <label>Pokemon list:</label>
-      <br>
-      <select name="pokemon-list" id="pokemon-list">
-        <option value="pikachu">Pikachu</option>
-        <option value="charizard">Charizard</option>
-        <option value="blastoise">Blastoisel</option>
-        <option value="flareon">Flareon</option>
-        <option value="bulbasaur">Bulbasaur</option>
-        <option value="gengar">Gengar</option>
-        <option value="alakazam">Alakazam</option>
-      </select>
-    </section>
-    <section>
-      <div class="pokemon-card" id="pokemon-card">
-        <div class="pokemon-card-image-container">
-          <img id="pokemon-image" src="" alt="pokemon-image">
+    <div>
+      <section class="selectinput">
+        <label class="description"><b>Pokemon list:</b></label>
+        <div class="custom-select">
+          <select name="pokemon-list" id="pokemon-list">
+            <option value="pikachu">Pikachu</option>
+            <option value="pikachu">Pikachu</option>
+            <option value="charizard">Charizard</option>
+            <option value="blastoise">Blastoise</option>
+            <option value="flareon">Flareon</option>
+            <option value="bulbasaur">Bulbasaur</option>
+            <option value="gengar">Gengar</option>
+            <option value="alakazam">Alakazam</option>
+          </select>
         </div>
-        <div class="pokemon-card-container">
-          <div class="pokemon-card-type">
-            <label id="pokemon-card-type"></label>
+      </section>
+      <section>
+        <div class="pokemon-card" id="pokemon-card">
+          <div class="pokemon-card-image-container">
+            <img id="pokemon-image" src="" alt="pokemon-image">
           </div>
-          <div class="pokemon-card-title">
-            <b><label id="pokemon-name"></label></b>
-          </div>
-          <div class="pokemon-card-stats">
-            <table class="pokemon-card-table-stats">
-              <tr>
-                <td>HP:</td>
-                <th><label id="pokemon-hp" class="pokemon-stat"></label></th>
-              </tr>
-              <tr>
-                <td>Attack:</td>
-                <th><label id="pokemon-attack" class="pokemon-stat"></label></th>
-              </tr>
+          <div class="pokemon-card-container">
+            <div class="pokemon-card-type">
+              <label id="pokemon-card-type"></label>
+            </div>
+            <div class="pokemon-card-title">
+              <b><label id="pokemon-name"></label></b>
+            </div>
+            <div class="pokemon-card-stats">
+              <table class="pokemon-card-table-stats">
+                <tr>
+                  <td>HP:</td>
+                  <th><label id="pokemon-hp" class="pokemon-stat"></label></th>
+                </tr>
+                <tr>
+                  <td>Attack:</td>
+                  <th><label id="pokemon-attack" class="pokemon-stat"></label></th>
+                </tr>
 
-              <tr>
-                <td>Defense:</td>
-                <th><label id="pokemon-defense" class="pokemon-stat"></label></th>
-              </tr>
+                <tr>
+                  <td>Defense:</td>
+                  <th><label id="pokemon-defense" class="pokemon-stat"></label></th>
+                </tr>
 
-              <tr>
-                <td>Special Attack:</td>
-                <th><label id="pokemon-specialAttack" class="pokemon-stat"></label></th>
-              </tr>
-              <tr>
-                <td>Special Defense:</td>
-                <th>
-                  <label id="pokemon-specialDefense" class="pokemon-stat"></label>
-                </th>
-              </tr>
-              <tr>
-                <td>Speed:</td>
-                <th>
-                  <label id="pokemon-speed" class="pokemon-stat"></label>
-                </th>
-              </tr>
-              <tr>
-                <td>Height:</td>
-                <th>
-                  <label id="pokemon-height"></label>
-                </th>
-              </tr>
-              <tr>
-                <td>Weight:</td>
-                <th>
-                  <label id="pokemon-weight"></label>
-                </th>
-              </tr>
-            </table>
-          </div>
-          <div>
-            <table class="pokemon-card-table-abilities">
-              <tr>
-                <td>Ability:</td>
-                <td>Hidden Ability:</td>
-              </tr>
-              <tr>
-                <th><label id="pokemon-ability"></label></th>
-                <th><label id="pokemon-ability-hidden"></label></th>
-              </tr>
-            </table>
+                <tr>
+                  <td>Special Attack:</td>
+                  <th><label id="pokemon-specialAttack" class="pokemon-stat"></label></th>
+                </tr>
+                <tr>
+                  <td>Special Defense:</td>
+                  <th>
+                    <label id="pokemon-specialDefense" class="pokemon-stat"></label>
+                  </th>
+                </tr>
+                <tr>
+                  <td>Speed:</td>
+                  <th>
+                    <label id="pokemon-speed" class="pokemon-stat"></label>
+                  </th>
+                </tr>
+                <tr>
+                  <td>Height:</td>
+                  <th>
+                    <label id="pokemon-height"></label>
+                  </th>
+                </tr>
+                <tr>
+                  <td>Weight:</td>
+                  <th>
+                    <label id="pokemon-weight"></label>
+                  </th>
+                </tr>
+              </table>
+            </div>
+            <div>
+              <table class="pokemon-card-table-abilities">
+                <tr>
+                  <td>Ability:</td>
+                  <td>Hidden Ability:</td>
+                </tr>
+                <tr>
+                  <th><label id="pokemon-ability"></label></th>
+                  <th><label id="pokemon-ability-hidden"></label></th>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 </body>
 
