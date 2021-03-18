@@ -13,7 +13,6 @@
         <div class="custom-select">
           <select name="pokemon-list" id="pokemon-list">
             <option value="pikachu">Pikachu</option>
-            <option value="pikachu">Pikachu</option>
             <option value="charizard">Charizard</option>
             <option value="blastoise">Blastoise</option>
             <option value="flareon">Flareon</option>
@@ -21,6 +20,18 @@
             <option value="gengar">Gengar</option>
             <option value="alakazam">Alakazam</option>
           </select>
+          <div class="select-selected" onclick="openDropDown(event,this);" >
+            Pikachu
+          </div>
+          <div id="select_selecter" class="select-items select-hide">
+            <div class="same-as-selected">Pikachu</div>
+            <div>Charizard</div>
+            <div>Blastoise</div>
+            <div>Flareon</div>
+            <div>Bulbasaur</div>
+            <div>Gengar</div>
+            <div>Alakazam</div>
+          </div>
         </div>
       </section>
       <section>
