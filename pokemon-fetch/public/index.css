@@ -181,6 +181,7 @@
   height: 0;
   border: 6px solid transparent;
   border-color: #fff transparent transparent transparent;
+  transition: 0.3s;
 }
 
 /* Point the arrow upwards when the select box is open (active): */
@@ -206,11 +207,11 @@
   right: 0;
   z-index: 99;
   border-radius: 10px;
-}
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
+  
+  max-height: 100vh;
+  height: 0px; 
+  overflow:hidden;
+  transition: height 0.5s linear 0ms;
 }
 
 .select-items div:hover, .same-as-selected {

@@ -1,7 +1,7 @@
 function changeToType(type){
 	document.getElementById("pokemon-card").classList="pokemon-card " + type;
   document.getElementsByClassName("select-selected")[0].classList="select-selected "+type;
-  document.getElementsByClassName("select-items")[0].classList="select-items select-hide " + type ;
+  document.getElementsByClassName("select-items")[0].classList="select-items " + type ;
 }
 
 function getPokemonByName(pokemonName){
@@ -54,7 +54,7 @@ function closeAllSelect(element) {
   }
   for (let i = 0; i < selectItems.length; i++) {
     if (arrNo.indexOf(i)) {
-      selectItems[i].classList.add("select-hide");
+      document.querySelector('#select_selecter').style.height = 0;
     }
   }
 }
@@ -68,7 +68,11 @@ function openDropDown(evt,element){
   evt.stopPropagation();
   closeAllSelect(element);
   element.classList.toggle("select-arrow-active");
-  element.nextElementSibling.classList.toggle("select-hide");
+  if(element.classList.contains("select-arrow-active")){
+    document.querySelector('#select_selecter').style.height = document.querySelectorAll("#pokemon-list option").length * document.querySelector('#select_selecter div').offsetHeight;
+  }else{
+    document.querySelector('#select_selecter').style.height = 0;
+  }
 }
 
 
